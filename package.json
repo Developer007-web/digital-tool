@@ -1,0 +1,24 @@
+{
+  "name": "designstudio-mcp",
+  "version": "1.0.0",
+  "description": "DesignStudio MCP — AI Creative Director / Brand Strategist server",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": {
+    "designstudio-mcp": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "groq-sdk": "^0.9.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}
